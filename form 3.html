@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Form</title>
+    <script>
+        function add() {
+           let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 + num2;
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+        function sub() {
+           let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 - num2;
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+        function mul() {
+           let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 * num2;
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+        function div() {
+           let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let result = num1 / num2;
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Addition Form</h1>
+    <form onsubmit="event.preventDefault(); performAddition();">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br><br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br><br>
+        <p id="result"> </p>
+        <button type="submit"onsubmit="add()">Add</button>
+        <button type="submit">Sub</button>
+        <button type="submit">Mul</button>
+        <button type="submit">Div</button>
+   
+</body>
+</html>

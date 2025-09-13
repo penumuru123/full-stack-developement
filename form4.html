@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Form</title>
+    <script>
+        function performAddition() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 + num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        }
+        function performAddition() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 - num2;
+            document.getElementById('result').innerText = "Result: " -result;
+        }
+        function performAddition() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 * num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        }
+        function div() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            var result = num1 / num2;
+            document.getElementById('result').innerText = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Addition Form</h1>
+    <form onsubmit="event.preventDefault(); performAddition();">
+        <label for="number1">Number 1:</label>
+        <input type="text" id="number1" required>
+        <br><br>
+        <label for="number2">Number 2:</label>
+        <input type="text" id="number2" required>
+        <br><br>
+        <button type="submit">Add</button>
+        <button type="submit">sub</button>
+        <button type="submit">mul</button>
+        <button type="submit"onclick="div()">div</button>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <style>
+            div{
+                width:100px;
+                height:100px;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count:infinite;
+                position:relative;
+               animation-delay: 1s ;
+               animation-direction: alternate;
+               animation-fill-mode:backwards;
+               
+            }
+            
+            
+#diva {animation-timing-function: linear;}
+#divb {animation-timing-function: ease;}
+#divc {animation-timing-function: ease-in;}
+#divd {animation-timing-function: ease-out;}
+
+            @keyframes example {
+                 from  {background-color: red;left:0px;top:0px;}
+                to {background-color: rgb(23, 212, 23);left:200px;top:0px;}
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div id="diva"></div>
+        <div id="divb"></div>   
+        <div id="divc"></div>
+        <div id="divd"></div>
+    </body>
+</html>
